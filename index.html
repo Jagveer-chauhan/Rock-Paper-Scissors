@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+</head>
+<body onload="showPopUp()">
+    <header>
+            <h1>Rock Paper Scissors</h1>
+    </header>
+    <div class="score-board">
+        <div class="badge">
+            <h2>Computer Score</h2>
+            <h3 id="computer-score">0</h3>
+        </div>
+        <div class="badge">
+            <h2>Your Score</h2>
+            <h3 id="user-score">0</h3>
+        </div>
+    </div>
+    <div class="choices">
+        <div class="choice" >
+            <img id="r" src="./img/rock.png" alt="Rock">
+            <h4>Rock</h4>
+        </div>
+        <div class="choice">
+            <img id="p" src="./img/paper.png" alt="Paper">
+            <h4>Paper</h4>
+        </div>
+        <div class="choice" >
+            <img id="s" src="./img/scissor.png" alt="Scissor">
+            <h4>Scissor</h4>
+        </div>
+    </div>
+    <div id="pop-up">
+        <p>Welcome! to Rock Paper Scissor game</p>
+        <button id="play" onclick="play()">Start Game</button>
+    </div>
+    <footer>
+        <div>
+            <p>made by <a href="https://jagveer-chauhan.github.io/portfolio/">Jagveer Chauhan</a></p>
+            <p>Copyright © 2022 MR.JRC</p>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
